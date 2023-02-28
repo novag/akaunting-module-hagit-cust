@@ -250,6 +250,16 @@
                                     @endif
                                 @stack('quantity_th_end')
 
+                                @stack('unit_th_start')
+                                    @if (!$hideUnit)
+                                        <td class="unit text font-semibold text-alignment-right text-right">
+                                            <span>
+                                                {{ trans($textUnit) }}
+                                            </span>
+                                        </td>
+                                    @endif
+                                @stack('unit_th_end')
+
                                 @stack('price_th_start')
                                     @if (!$hidePrice)
                                         <td class="price text font-semibold text-alignment-right text-right">
@@ -295,6 +305,7 @@
                                         hide-name="{{ $hideName }}"
                                         hide-description="{{ $hideDescription }}"
                                         hide-quantity="{{ $hideQuantity }}"
+                                        hide-unit="{{ $hideUnit }}"
                                         hide-price="{{ $hidePrice }}"
                                         hide-discount="{{ $hideDiscount }}"
                                         hide-amount="{{ $hideAmount }}"
