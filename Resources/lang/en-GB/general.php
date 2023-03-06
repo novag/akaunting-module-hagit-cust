@@ -6,7 +6,7 @@ return [
     'description'           => 'HagIT customizations.',
 
     'field' => [
-        'tax_id'            => 'Tax/VAT ID',
+        'tax_id'            => 'VAT ID',
         'vat_id'            => 'VAT ID',
     ],
 
