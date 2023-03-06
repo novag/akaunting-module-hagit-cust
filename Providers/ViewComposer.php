@@ -2,6 +2,7 @@
 
 namespace Modules\HagitCust\Providers;
 
+use Modules\HagitCust\View\Composers\AdvertisementEmailFooterComposer;
 use Modules\HagitCust\View\Composers\DocumentTemplateDefaultComposer;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\ServiceProvider;
@@ -26,6 +27,7 @@ class ViewComposer extends ServiceProvider
     public function boot()
     {
         View::composer('components.documents.template.default', DocumentTemplateDefaultComposer::class);
+        View::composer('components.email.footer', AdvertisementEmailFooterComposer::class);
     }
 
     /**

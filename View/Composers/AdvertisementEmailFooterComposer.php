@@ -4,7 +4,7 @@ namespace Modules\HagitCust\View\Composers;
 
 use Illuminate\View\View;
 
-class DocumentTemplateDefaultComposer
+class AdvertisementEmailFooterComposer
 {
     /**
      * Bind data to the view.
@@ -14,6 +14,6 @@ class DocumentTemplateDefaultComposer
      */
     public function compose(View $view)
     {
-        $view->setPath(view('hagit-cust::components.documents.template.default')->getPath());
+        $view->setPath(view('hagit-cust::empty')->getPath());
     }
 }
