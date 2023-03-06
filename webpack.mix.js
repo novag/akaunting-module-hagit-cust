@@ -16,5 +16,4 @@ mix.options({
             extractComments: false,
         }
     })
-    .js('Resources/assets/js/hagit-cust.js', 'Resources/assets/js/hagit-cust.min.js')
     .vue();
